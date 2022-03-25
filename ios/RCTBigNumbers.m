@@ -28,8 +28,14 @@ RCT_EXPORT_METHOD(sum:(nonnull NSArray *)numbers
 {
   RCTLogInfo(@"Summing numbers");
   NSInteger v = 0;
-  for (NSNumber *n in numbers) {
-    v += [n intValue];
+  for (id obj in numbers) {
+    if ([obj isKindOfClass:[NSNumber class]]) {
+      v += [obj intValue];
+    } else if ([obj isKindOfClass:[NSString class]]) {
+      v += [obj intValue];
+    } else {
+      reject(@"mega_vail", @"Unknown object type", nil);
+    }
   }
   resolve(@(v));
 //  reject(@"epic_fail", @"dude", nil);

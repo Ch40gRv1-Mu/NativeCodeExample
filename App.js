@@ -34,7 +34,7 @@ async function goNative() {
   console.log("Time to go native!");
   // console.log(BigNumbers);
   try {
-    const res = await BigNumbers.sum([1, 6, 7]);
+    const res = await BigNumbers.sum([1, "123", 7]);
     console.log("Result is " + res);
   } catch (e) {
     console.error(e);
