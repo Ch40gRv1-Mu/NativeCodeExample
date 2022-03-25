@@ -21,6 +21,10 @@ DerivedData
 *.xcuserstate
 project.xcworkspace
 
+# CocoaPods
+ios/Pods
+ios/Podfile.lock
+
 # Gradle
 /build/
 /packages/react-native-gradle-plugin/build/
@@ -96,6 +100,7 @@ package-lock.json
 # Ruby Gems (Bundler)
 /vendor
 /template/vendor
+Gemfile.lock
 
 # iOS / CocoaPods
 /template/ios/build/
