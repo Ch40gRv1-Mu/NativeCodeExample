@@ -42,6 +42,19 @@ RCT_EXPORT_METHOD(sum:(nonnull NSArray *)numbers
 //  reject(@"epic_fail", @"dude", nil);
 }
 
+RCT_EXPORT_METHOD(concat:(nonnull NSArray *)values
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  NSMutableString *result = [NSMutableString stringWithCapacity:200];
+  for (id obj in values) {
+    [result appendString:obj];
+    [result appendString:@"; "];
+  }
+  resolve(result);
+//  reject(@"epic_fail", @"dude", nil);
+}
+
 // To export a module named BigNumbers
 RCT_EXPORT_MODULE();
 
