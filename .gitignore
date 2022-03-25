@@ -23,7 +23,6 @@ project.xcworkspace
 
 # CocoaPods
 ios/Pods
-ios/Podfile.lock
 
 # Gradle
 /build/
@@ -100,7 +99,6 @@ package-lock.json
 # Ruby Gems (Bundler)
 /vendor
 /template/vendor
-Gemfile.lock
 
 # iOS / CocoaPods
 /template/ios/build/
