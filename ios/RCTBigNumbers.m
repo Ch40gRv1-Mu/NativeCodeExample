@@ -34,7 +34,8 @@ RCT_EXPORT_METHOD(sum:(nonnull NSArray *)numbers
     } else if ([obj isKindOfClass:[NSString class]]) {
       v += [obj intValue];
     } else {
-      reject(@"mega_vail", @"Unknown object type", nil);
+      reject(@"mega_fail", @"Unknown object type", nil);
+      return;
     }
   }
   resolve(@(v));
