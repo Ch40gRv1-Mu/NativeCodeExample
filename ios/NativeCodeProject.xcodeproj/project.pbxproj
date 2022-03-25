@@ -165,8 +165,8 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				5DBCC2BA282F026B81DDAD11 /* [CP] Embed Pods Frameworks */,
 				ECD8A7E653DC485DDBBB7FDA /* [CP] Copy Pods Resources */,
+				42ED48ED24FA53E1319E529B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,8 +188,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				10705454F23A669ED4695DFD /* [CP] Embed Pods Frameworks */,
 				97728FF5FEEC392965A46D3E /* [CP] Copy Pods Resources */,
+				18536A456EA22A592C1E3821 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -270,7 +270,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		10705454F23A669ED4695DFD /* [CP] Embed Pods Frameworks */ = {
+		18536A456EA22A592C1E3821 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,7 +287,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NativeCodeProject/Pods-NativeCodeProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5DBCC2BA282F026B81DDAD11 /* [CP] Embed Pods Frameworks */ = {
+		42ED48ED24FA53E1319E529B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
