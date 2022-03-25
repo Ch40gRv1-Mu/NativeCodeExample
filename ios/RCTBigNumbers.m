@@ -22,6 +22,19 @@ RCT_EXPORT_METHOD(multiply:(nonnull NSNumber *)a
 //  reject(@"epic_fail", @"dude", nil);
 }
 
+RCT_EXPORT_METHOD(sum:(nonnull NSArray *)numbers
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  RCTLogInfo(@"Summing numbers");
+  NSInteger v = 0;
+  for (NSNumber *n in numbers) {
+    v += [n intValue];
+  }
+  resolve(@(v));
+//  reject(@"epic_fail", @"dude", nil);
+}
+
 // To export a module named BigNumbers
 RCT_EXPORT_MODULE();
 
