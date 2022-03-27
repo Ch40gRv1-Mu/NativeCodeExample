@@ -11,6 +11,10 @@
 #import <React/RCTBridgeModule.h>
 
 @interface RCTBigNumbers : NSObject <RCTBridgeModule>
+-(void)multiply:(nonnull NSNumber *)a
+          withB:(nonnull NSNumber *)b
+       resolver:(nonnull RCTPromiseResolveBlock)resolve
+       rejecter:(nonnull RCTPromiseRejectBlock)reject;
 @end
 
 #endif /* RCTBigNumbers_h */

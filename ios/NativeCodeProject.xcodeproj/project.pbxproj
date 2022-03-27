@@ -14,8 +14,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		162C44DB225A68277F4805B3 /* libPods-NativeCodeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 422F230FDF401954AB8D14F2 /* libPods-NativeCodeProject.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		E21208E027E489A8005C07A7 /* RCTBigNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = E21208DF27E489A8005C07A7 /* RCTBigNumbers.m */; };
-		E21208E127E489A8005C07A7 /* RCTBigNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = E21208DF27E489A8005C07A7 /* RCTBigNumbers.m */; };
+		E29BC5A427F04EEE00D11706 /* MockResolverTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BC5A227F04CE000D11706 /* MockResolverTest.m */; };
+		E29BC5A527F04EF100D11706 /* RCTBigNumbersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BC58127F03FE800D11706 /* RCTBigNumbersTest.m */; };
+		E29BC5A827F0564B00D11706 /* MockResolver.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BC5A727F0564B00D11706 /* MockResolver.m */; };
+		E29BC5AC27F0608200D11706 /* MockReject.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BC5AB27F0608200D11706 /* MockReject.m */; };
+		E29BC5AE27F0627000D11706 /* MockRejectTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E29BC5AD27F0627000D11706 /* MockRejectTest.m */; };
+		E29BC5AF27F070A600D11706 /* RCTBigNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = E21208DF27E489A8005C07A7 /* RCTBigNumbers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 		B700BAA80668F5D807166F25 /* Pods-NativeCodeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeCodeProject.release.xcconfig"; path = "Target Support Files/Pods-NativeCodeProject/Pods-NativeCodeProject.release.xcconfig"; sourceTree = "<group>"; };
 		E21208DE27E489A8005C07A7 /* RCTBigNumbers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTBigNumbers.h; sourceTree = "<group>"; };
 		E21208DF27E489A8005C07A7 /* RCTBigNumbers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTBigNumbers.m; sourceTree = "<group>"; };
+		E29BC58127F03FE800D11706 /* RCTBigNumbersTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTBigNumbersTest.m; sourceTree = "<group>"; };
+		E29BC5A227F04CE000D11706 /* MockResolverTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockResolverTest.m; sourceTree = "<group>"; };
+		E29BC5A627F0549F00D11706 /* MockResolver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockResolver.h; sourceTree = "<group>"; };
+		E29BC5A727F0564B00D11706 /* MockResolver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockResolver.m; sourceTree = "<group>"; };
+		E29BC5AA27F0607500D11706 /* MockReject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockReject.h; sourceTree = "<group>"; };
+		E29BC5AB27F0608200D11706 /* MockReject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockReject.m; sourceTree = "<group>"; };
+		E29BC5AD27F0627000D11706 /* MockRejectTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockRejectTest.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EF472A175C4A4EF4C7D69931 /* Pods-NativeCodeProject-NativeCodeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NativeCodeProject-NativeCodeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-NativeCodeProject-NativeCodeProjectTests/Pods-NativeCodeProject-NativeCodeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,7 +84,14 @@
 		00E356EF1AD99517003FC87E /* NativeCodeProjectTests */ = {
 			isa = PBXGroup;
 			children = (
+				E29BC5AA27F0607500D11706 /* MockReject.h */,
+				E29BC5AB27F0608200D11706 /* MockReject.m */,
+				E29BC5AD27F0627000D11706 /* MockRejectTest.m */,
+				E29BC5A627F0549F00D11706 /* MockResolver.h */,
+				E29BC5A727F0564B00D11706 /* MockResolver.m */,
+				E29BC5A227F04CE000D11706 /* MockResolverTest.m */,
 				00E356F21AD99517003FC87E /* NativeCodeProjectTests.m */,
+				E29BC58127F03FE800D11706 /* RCTBigNumbersTest.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
 			path = NativeCodeProjectTests;
@@ -408,8 +426,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E29BC5AE27F0627000D11706 /* MockRejectTest.m in Sources */,
+				E29BC5AC27F0608200D11706 /* MockReject.m in Sources */,
+				E29BC5A527F04EF100D11706 /* RCTBigNumbersTest.m in Sources */,
+				E29BC5A827F0564B00D11706 /* MockResolver.m in Sources */,
 				00E356F31AD99517003FC87E /* NativeCodeProjectTests.m in Sources */,
-				E21208E127E489A8005C07A7 /* RCTBigNumbers.m in Sources */,
+				E29BC5A427F04EEE00D11706 /* MockResolverTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,7 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E21208E027E489A8005C07A7 /* RCTBigNumbers.m in Sources */,
+				E29BC5AF27F070A600D11706 /* RCTBigNumbers.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
