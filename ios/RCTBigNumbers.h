@@ -15,6 +15,17 @@
           withB:(nonnull NSNumber *)b
        resolver:(nonnull RCTPromiseResolveBlock)resolve
        rejecter:(nonnull RCTPromiseRejectBlock)reject;
+
+-(void)sum:(nonnull NSArray *)numbers
+  resolver:(nonnull RCTPromiseResolveBlock)resolve
+  rejecter:(nonnull RCTPromiseRejectBlock)reject;
+
+-(void)concat:(nonnull NSArray *)values
+     resolver:(nonnull RCTPromiseResolveBlock)resolve
+     rejecter:(nonnull RCTPromiseRejectBlock)reject;
+
+-(void)makeAnArray:(nonnull RCTPromiseResolveBlock)resolve
+          rejecter:(nonnull RCTPromiseRejectBlock)reject;
 @end
 
 #endif /* RCTBigNumbers_h */

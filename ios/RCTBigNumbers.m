@@ -55,6 +55,13 @@ RCT_EXPORT_METHOD(concat:(nonnull NSArray *)values
 //  reject(@"epic_fail", @"dude", nil);
 }
 
+RCT_EXPORT_METHOD(makeAnArray:
+                  (RCTPromiseResolveBlock)resolve
+                  rejecter:(RCTPromiseRejectBlock)reject)
+{
+  resolve(@[@"abcdefg", @"hijklmnop"]);
+}
+
 // To export a module named BigNumbers
 RCT_EXPORT_MODULE();
 
